@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>REDArmor V0.2™</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            font-family: 'Poppins', Arial, sans-serif;
+            color: #fff;
+            background: #000;
+            overflow: hidden;
+        }
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-shadow: 0 0 25px silver;
+        }
+        h2 {
+            margin-top: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            color: #ccc;
+            margin: 15px 0;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .skills-list div {
+            background: rgba(0, 255, 204, 0.2);
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .skills-list div:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+        }
+        .telegram-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(0, 255, 204, 0.3);
+            border: 2px solid #00ffcc;
+            border-radius: 8px;
+            text-transform: uppercase;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        .telegram-link:hover {
+            background: rgba(0, 255, 204, 0.8);
+            color: #000;
+            border-color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <video class="video-bg" autoplay muted loop>
+        <source src="https://cdn.glitch.global/42b61762-5226-4a25-9965-d2e029507356/6%20(1).MP4?v=1727712312654" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <img src="https://i.ibb.co/ZMrmT5b/redarmor-profile.jpg" alt="Profile Picture" style="border-radius: 50%; width: 180px; height: 180px; margin-bottom: 15px; box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);">
+        
+        <h1>REDArmor V0.2</h1>
+
+        <div class="skills-list">
+            <div>Ethical Hacking</div>
+            <div>Web Development</div>
+            <div>Termux Tools Expert</div>
+            <div>Phishing Web Creation</div>
+            <div>Network Security</div>
+            <div>Data Scraping</div>
+        </div>
+
+        <div class="section">
+            <h2>Join My Telegram Channel</h2>
+            <p>Get the latest updates on tools, tutorials, and security tips by joining my Telegram channel.</p>
+            <a href="https://t.me/+sIlX1-8ZYs81Nzk1" target="_blank" class="telegram-link">
+                📢 Join Now
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
